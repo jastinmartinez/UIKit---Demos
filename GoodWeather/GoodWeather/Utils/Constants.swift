@@ -10,7 +10,7 @@ struct Constants {
     struct Urls {
         static func urlForWeatherCity(city: String) -> URL {
             let unit = DbHelper.UserDefault.getUnit() ?? Unit.fahrenheit.rawValue
-            return URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city.escaped())&appid=0b1ac19d892fa596cfda6e8d27a664b9&units=\(unit)")!
+            return URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city.escaped())&appid=<API KEY&units=\(unit)")!
         }
     }
     struct decodeModel<T> where T : Decodable {
