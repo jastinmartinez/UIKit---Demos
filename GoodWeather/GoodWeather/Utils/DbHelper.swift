@@ -16,5 +16,8 @@ struct DbHelper {
         static func setUnit(for value: String)         {
             userDefault.setValue(value, forKey: Constants.UserDefaultName.Unit)
         }
+        static func removeKey() {
+            userDefault.removeObject(forKey: Constants.UserDefaultName.Unit)
+        }
     }
 }

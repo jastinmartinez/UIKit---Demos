@@ -16,7 +16,7 @@ extension Unit {
         get {
             switch self {
             case .celsius:
-                return "Celcius"
+                return "Celsius"
             case .fahrenheit:
                 return "Fahrenheit"
             }
@@ -27,15 +27,12 @@ extension Unit {
 
 class SettingsViewModel {
     let unit = Unit.allCases
-    var selectedUnit : Unit? {
+    var selectedUnit : Unit {
         get {
-            
-            return Unit(rawValue: DbHelper.UserDefault.getUnit() ?? "")
+            return Unit(rawValue: DbHelper.UserDefault.getUnit()!)!
         }
         set {
-            if let value = newValue?.rawValue {
-                DbHelper.UserDefault.setUnit(for: value)
-            }
+            DbHelper.UserDefault.setUnit(for: newValue.rawValue)
         }
     }
 }

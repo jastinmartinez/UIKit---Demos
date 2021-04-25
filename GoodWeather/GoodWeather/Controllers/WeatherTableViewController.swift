@@ -15,9 +15,7 @@ class WeatherTableViewController: UITableViewController,AddWeatherDelegate {
     override func viewDidLoad() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         super.viewDidLoad()
-        if let value = DbHelper.UserDefault.getUnit(){
-            self.lastUnitSelection = Unit(rawValue: value)
-        }
+        self.lastUnitSelection = Unit(rawValue: DbHelper.UserDefault.getUnit()!)
     }
     
     // MARK: - Table view data source
@@ -75,12 +73,10 @@ class WeatherTableViewController: UITableViewController,AddWeatherDelegate {
 //MARK: - Settings Delegate
 extension WeatherTableViewController : SettingsDelegate {
     func settingsDone(vm: SettingsViewModel) {
-        if let vmSelected = vm.selectedUnit?.rawValue {
-            if lastUnitSelection.rawValue != vmSelected {
+            if lastUnitSelection.rawValue != vm.selectedUnit.rawValue {
                 weatherViewModels.updateUnit(to: lastUnitSelection)
                 tableView.reloadData()
-                lastUnitSelection = Unit(rawValue: vmSelected)
-            }
+                lastUnitSelection = Unit(rawValue: vm.selectedUnit.rawValue)
         }
     }
 }
