@@ -1,5 +1,10 @@
 # UIKit-Demo
  
--- HowMuchWillTake
-simple app that calculate the amount of time that use required for buy desire stuff depending the payments per hour
-https://recordit.co/5n4QwuYBmk
+HowMuchWillTake
+An app that takes two inputs
+	1. wage per hour
+	2. item price
+calculate the amount of time you'll work to pay for your item
+preview
+![Farmers Market Finder Demo](https://recordit.co/5n4QwuYBmk)
+
