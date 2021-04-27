@@ -1,9 +1,9 @@
 # UIKit-Demo
 
 
-## Hustle Mode ON
+## hustle-mode
 Introduction App to IOS development
-## preview HowMuchWillTake
+## preview hustle-mode
 ![HowMuchWillTake](https://media.giphy.com/media/BuGKs3BWcLd7kIYYTN/giphy.gif)
 <br />
 <br />
@@ -13,9 +13,9 @@ Introduction App to IOS development
 An app that takes two inputs
 1. wage per hour
 2. item price <br />
-<br />
 *calculate the amount of time you'll work to pay for your item*
 ## preview HowMuchWillTake
 ![HowMuchWillTake](https://media.giphy.com/media/agDUZTmeALqDFFPdx1/giphy.gif)
-
+<br />
+<br />
 
