@@ -6,7 +6,7 @@
 Address Project is a simple maintenance app for companies how want to keep track of differente customer address.
 
 ## Back-End
-Vapor Server SWIFT, PosgtgreSQL with post and get request
+Vapor Server SWIFT, PostgreSQL with post and get request
 
 ## Front-End
 IOS using UIkit and Swift
