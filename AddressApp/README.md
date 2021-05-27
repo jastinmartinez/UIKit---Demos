@@ -21,8 +21,13 @@ Clone the Github Repository
 ```
 https://github.com/jastinmartinez/UIKit---Demos/tree/main/AddressApp
 ```
-Run the app:
+
+## AddressApp-Demo
+![AddressApp-Demo](https://media.giphy.com/media/aPP2BCdzYyy23lWpBb/giphy.gif)
+
+![AddressApp-Demo](https://media.giphy.com/media/d95DSoOu2zdHKZAYwK/giphy.gif)
+
 
 ## Tools
-* Almorefire
+* Alamofire
 * Vapor
