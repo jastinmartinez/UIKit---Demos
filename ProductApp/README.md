@@ -28,7 +28,7 @@ https://github.com/jastinmartinez/UIKit---Demos/tree/main/ProductApp
 2. Abrir archivo ProductApp.xcodeproj
 3. Hacer Build
 4. ir a la seccion de test
-5. Ejecutar Test y verificar si pasaron
+5. Ejecutar Pruebas y verificar si pasaron
 6. Seleccionar Dispositivo
 7. Correr App
 
