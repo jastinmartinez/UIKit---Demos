@@ -41,7 +41,18 @@
 		045A7D69265F85D200F6E8C2 /* IGetResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7D68265F85D200F6E8C2 /* IGetResource.swift */; };
 		045CC94C265FEDF4002C75A4 /* AddAddressViewController+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC94B265FEDF4002C75A4 /* AddAddressViewController+Other.swift */; };
 		045CC94E265FEE86002C75A4 /* AddAddressViewControlelr+NotifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC94D265FEE86002C75A4 /* AddAddressViewControlelr+NotifyView.swift */; };
+		045CC956265FFB49002C75A4 /* AddressAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CC955265FFB49002C75A4 /* AddressAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045CC958265FFB49002C75A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041E56FE265EDB300065D587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041E5705265EDB300065D587;
+			remoteInfo = AddressApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		041B8959265FCB5700580525 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -79,6 +90,9 @@
 		045A7D68265F85D200F6E8C2 /* IGetResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGetResource.swift; sourceTree = "<group>"; };
 		045CC94B265FEDF4002C75A4 /* AddAddressViewController+Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddAddressViewController+Other.swift"; sourceTree = "<group>"; };
 		045CC94D265FEE86002C75A4 /* AddAddressViewControlelr+NotifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddAddressViewControlelr+NotifyView.swift"; sourceTree = "<group>"; };
+		045CC953265FFB49002C75A4 /* AddressAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045CC955265FFB49002C75A4 /* AddressAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAppTests.swift; sourceTree = "<group>"; };
+		045CC957265FFB49002C75A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		045CC950265FFB49002C75A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				041E5708265EDB300065D587 /* AddressApp */,
+				045CC954265FFB49002C75A4 /* AddressAppTests */,
 				041E5707265EDB300065D587 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				041E5706265EDB300065D587 /* AddressApp.app */,
+				045CC953265FFB49002C75A4 /* AddressAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +237,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		045CC954265FFB49002C75A4 /* AddressAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				045CC955265FFB49002C75A4 /* AddressAppTests.swift */,
+				045CC957265FFB49002C75A4 /* Info.plist */,
+			);
+			path = AddressAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +269,24 @@
 			productReference = 041E5706265EDB300065D587 /* AddressApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		045CC952265FFB49002C75A4 /* AddressAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045CC95A265FFB49002C75A4 /* Build configuration list for PBXNativeTarget "AddressAppTests" */;
+			buildPhases = (
+				045CC94F265FFB49002C75A4 /* Sources */,
+				045CC950265FFB49002C75A4 /* Frameworks */,
+				045CC951265FFB49002C75A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045CC959265FFB49002C75A4 /* PBXTargetDependency */,
+			);
+			name = AddressAppTests;
+			productName = AddressAppTests;
+			productReference = 045CC953265FFB49002C75A4 /* AddressAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +298,10 @@
 				TargetAttributes = {
 					041E5705265EDB300065D587 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					045CC952265FFB49002C75A4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 041E5705265EDB300065D587;
 					};
 				};
 			};
@@ -268,6 +322,7 @@
 			projectRoot = "";
 			targets = (
 				041E5705265EDB300065D587 /* AddressApp */,
+				045CC952265FFB49002C75A4 /* AddressAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +335,13 @@
 				041E5716265EDB320065D587 /* LaunchScreen.storyboard in Resources */,
 				041E5713265EDB320065D587 /* Assets.xcassets in Resources */,
 				041E5711265EDB300065D587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045CC951265FFB49002C75A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +385,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		045CC94F265FFB49002C75A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045CC956265FFB49002C75A4 /* AddressAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045CC959265FFB49002C75A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041E5705265EDB300065D587 /* AddressApp */;
+			targetProxy = 045CC958265FFB49002C75A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		041E570F265EDB300065D587 /* Main.storyboard */ = {
@@ -499,6 +577,46 @@
 			};
 			name = Release;
 		};
+		045CC95B265FFB49002C75A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQNY636DWS;
+				INFOPLIST_FILE = AddressAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastinmattinez.AddressAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressApp.app/AddressApp";
+			};
+			name = Debug;
+		};
+		045CC95C265FFB49002C75A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WQNY636DWS;
+				INFOPLIST_FILE = AddressAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jastinmattinez.AddressAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressApp.app/AddressApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +634,15 @@
 			buildConfigurations = (
 				041E571B265EDB320065D587 /* Debug */,
 				041E571C265EDB320065D587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045CC95A265FFB49002C75A4 /* Build configuration list for PBXNativeTarget "AddressAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045CC95B265FFB49002C75A4 /* Debug */,
+				045CC95C265FFB49002C75A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

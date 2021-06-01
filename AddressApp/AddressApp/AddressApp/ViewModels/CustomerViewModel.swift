@@ -22,9 +22,6 @@ class CustomerViewModels {
     
     var delegate: NotifyCustomerView?
     
-    private var update = false
-    
-  
     private(set) var customersViewModels = [CustomerViewModel]()
     {
         didSet {
