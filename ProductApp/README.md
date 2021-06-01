@@ -1,36 +1,40 @@
 
 
 
-# AddressApp-Demo
+# ProductApp-Demo
 
-Address Project is a simple maintenance app for companies how want to keep track of differente customer address.
+Proyecto demo para mostrar frecuencia de productos mas vendidos.
 
-## Back-End
-Vapor Server SWIFT, PostgreSQL with post and get request
+## ProductApp
+![ProductApp-Demo](https://media.giphy.com/media/bbzrAWyPV0CVMuFqW3/giphy.gif)
 
 ## Front-End
-IOS using UIkit and Swift
+UIkit
 
-## Requirements
-Setup Vapor
-Run Migration
-Start Service
+## Requerimientos
+-	Se necesita crear un app para un dispositivo iOS, que nos permite listar todos los productos de la tienda de Roberto.
+-	Se debe de mostrar la Imagen, el ID y la Descripción del Producto.
+-	El App tendrá un List View, de 1 Productos por Fila.
+-	El App Permitirá hacer un filtro por Maker (Productor)
 
-## Installation
+## Instalacion
 Clone the Github Repository
 ```
-https://github.com/jastinmartinez/UIKit---Demos/tree/main/AddressApp
+https://github.com/jastinmartinez/UIKit---Demos/tree/main/ProductApp
 ```
 
-## AddressApp-Demo
-![AddressApp-Demo](https://media.giphy.com/media/aPP2BCdzYyy23lWpBb/giphy.gif)
+## Uso
+1. Descomprimir carpeta
+2. Abrir archivo ProductApp.xcodeproj
+3. Hacer Build
+4. ir a la seccion de test
+5. Ejecutar Test y verificar si pasaron
+6. Seleccionar Dispositivo
+7. Correr App
 
-![AddressApp-Demo](https://media.giphy.com/media/d95DSoOu2zdHKZAYwK/giphy.gif)
 
-
-## Tools
+## Packages
 * Alamofire
-* Vapor
 
-## Additional Examples
+## Ejemplos Adicionales
 https://giphy.com/channel/jastinmartinez
