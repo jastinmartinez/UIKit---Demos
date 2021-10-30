@@ -10,6 +10,7 @@ import UIKit
 class ProductViewController: UIViewController {
     
     @IBOutlet weak var productTableView: UITableView!
+    
     let searchController = UISearchController()
     
      var productPresenter: ProductPresenter!

@@ -24,13 +24,18 @@ class ProductTableViewCell: UITableViewCell {
         self.productIDLabel.text = vm.Id
         self.productDescriptionLabel.text = vm.Description
         self.productMarkerLabel.text = vm.Maker
-        
-        DispatchQueue.global(qos: .background).async {
-            let dataImage = try? Data(contentsOf: URL(string: vm.img)!)
-            let image = UIImage(data: dataImage!)
-            DispatchQueue.main.async {
-                self.productImgImage.image = image
+        DispatchQueue.init(label: "com.load.images",qos: .userInteractive).async {
+            self.bindImage(image: vm.img) { dataImage in
+                let image = UIImage(data: dataImage!)
+                DispatchQueue.main.async {
+                    self.productImgImage.image = image
+                }
             }
         }
+    }
+    func bindImage(image: String,completion:(Data?) -> ()) {
+        guard let imageUrl = URL(string: image) else {return}
+        let image = try? Data(contentsOf: imageUrl)
+        completion(image)
     }
 }
