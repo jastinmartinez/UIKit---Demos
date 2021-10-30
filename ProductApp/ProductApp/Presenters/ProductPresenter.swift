@@ -13,7 +13,7 @@ class ProductPresenter {
     
     private(set) var filteredProducts = [Product]()
     
-    private(set) var products = [Product]()
+    lazy private(set) var products = [Product]()
     {
         didSet {
             self.delegate?.didProductsLoad()
@@ -26,7 +26,7 @@ class ProductPresenter {
         self.productService = productService
     }
     
-    func getProducts()  {
+     func getProducts()  {
         productService.getProducts { products in
             if products != nil {
                 self.products = products!
