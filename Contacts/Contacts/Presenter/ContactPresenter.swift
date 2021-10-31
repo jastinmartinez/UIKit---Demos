@@ -7,16 +7,27 @@
 
 import Foundation
 import UIKit
+import SVGKit
 
-class ContactsPresenter : ContatcsProtocol {
+class ContactsPresenter : ContactPresenterAvatarProtocol,ContactPresenterOperationProtocol {
     
-    private (set) var contacts = [Contact]()
+    private (set) var contacts = [Contact]() {
+        
+        didSet {
+            
+            self.contactCloseViewDelegate?.CloseViewAfterOperationComplete()
+            
+            self.contactNotifyTableViewDelegate?.NotifyTableViewAfterOperationComplete()
+        }
+    }
+    
+    var contactCloseViewDelegate: ContactPresenterProtocolCloseViewDelegate?
+    
+    var contactNotifyTableViewDelegate: ContactPresenterProtocolNotifyTableViewDelegate?
     
     func addContact(_ contact: Contact) {
         
         contacts.append(contact)
-        
-        print(contacts)
     }
     
     func editContact(_ contact: Contact) {
@@ -27,7 +38,7 @@ class ContactsPresenter : ContatcsProtocol {
         }
     }
     
-    func removeContact(_ contactID: UUID) {
+    func removeContact(_ contactID: String) {
         
         if let customerIndex = contacts.firstIndex(where: {$0.id == contactID}) {
             
@@ -37,11 +48,11 @@ class ContactsPresenter : ContatcsProtocol {
     
     func generateAvatar(name: String,completion: @escaping (UIImage) -> ()) {
         
-        APIService().getAvatar(name: name) { data in
+        APIService().getAvatar(name: name) { imageData in
             
-            if let image = UIImage(data: data) {
+            if let image = SVGKImage(data: imageData) {
                 
-                completion(image)
+                completion(image.uiImage)
             }
         }
     }

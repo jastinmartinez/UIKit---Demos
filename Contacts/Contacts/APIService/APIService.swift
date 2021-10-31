@@ -7,26 +7,21 @@
 
 import Foundation
 
-
 final class APIService: APIServiceProtocol {
     
     func getAvatar(name: String, completion: @escaping (Data) -> ()) {
         
-        let optionalUrl = URL(string: "\(Constants.urls.avatarUrl + name + ".svg")")
-        
+        let optionalUrl = URL(string: Constants.urls.avatarUrl(name: name))
+    
         guard let url = optionalUrl else { return }
-        
-        let urlRequest = URLRequest(url: url)
-        
-        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+    
+        URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let data = data {
-                
-                DispatchQueue.main.async {
-                    
-                    completion(data)
-                }
+            
+                completion(data)
             }
+            
         }.resume()
     }
 }

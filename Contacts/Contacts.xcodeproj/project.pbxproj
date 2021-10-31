@@ -20,13 +20,22 @@
 		04315DC3272DC0060040560B /* ContactCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC2272DC0060040560B /* ContactCreateViewController.swift */; };
 		04315DC5272DE79C0040560B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC4272DE79C0040560B /* ContactDetailsViewController.swift */; };
 		04315DC7272DEA320040560B /* Label+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC6272DEA320040560B /* Label+Rounded.swift */; };
+		04A4227E272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4227D272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift */; };
+		04AC04B2272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B1272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift */; };
+		04AC04B4272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B3272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift */; };
+		04AC04B6272F1A8B00B8F02A /* ContactPresenterProtocolCloseViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B5272F1A8B00B8F02A /* ContactPresenterProtocolCloseViewDelegate.swift */; };
+		04AC04B8272F1AAC00B8F02A /* ContactPresenterOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B7272F1AAC00B8F02A /* ContactPresenterOperationProtocol.swift */; };
+		04AC04BA272F207D00B8F02A /* ContatcViewController+NotifyTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B9272F207D00B8F02A /* ContatcViewController+NotifyTableViewDelegate.swift */; };
+		04AC04BC272F21D000B8F02A /* ContactCreateViewController+CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04BB272F21D000B8F02A /* ContactCreateViewController+CloseView.swift */; };
+		04AC04BE272F22CA00B8F02A /* ContactPresenterProtocolNotifyTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04BD272F22CA00B8F02A /* ContactPresenterProtocolNotifyTableViewDelegate.swift */; };
 		04E1B71E272E32AE00A9284D /* PhoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B71D272E32AE00A9284D /* PhoneType.swift */; };
 		04E1B720272E32C300A9284D /* EmailType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B71F272E32C300A9284D /* EmailType.swift */; };
 		04E1B723272E335600A9284D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B722272E335600A9284D /* APIService.swift */; };
 		04E1B725272E337500A9284D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B724272E337500A9284D /* APIServiceProtocol.swift */; };
 		04E1B728272E340200A9284D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B727272E340200A9284D /* Constant.swift */; };
 		04E1B72A272E38F500A9284D /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B729272E38F500A9284D /* ContactPresenter.swift */; };
-		04E1B72C272E398C00A9284D /* ContatcsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */; };
+		04E1B72C272E398C00A9284D /* ContactPresenterAvatarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B72B272E398B00A9284D /* ContactPresenterAvatarProtocol.swift */; };
+		3A02D3922F91276B2525CBB6 /* Pods_Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDACC7FDE757CB542E0E29E /* Pods_Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,13 +54,24 @@
 		04315DC2272DC0060040560B /* ContactCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateViewController.swift; sourceTree = "<group>"; };
 		04315DC4272DE79C0040560B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		04315DC6272DEA320040560B /* Label+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Rounded.swift"; sourceTree = "<group>"; };
+		04A4227D272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateViewController+TextFieldsTargets.swift"; sourceTree = "<group>"; };
+		04AC04B1272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldsAlertViewController.swift; sourceTree = "<group>"; };
+		04AC04B3272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateViewController+RequiredFieldsAndValidations.swift"; sourceTree = "<group>"; };
+		04AC04B5272F1A8B00B8F02A /* ContactPresenterProtocolCloseViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterProtocolCloseViewDelegate.swift; sourceTree = "<group>"; };
+		04AC04B7272F1AAC00B8F02A /* ContactPresenterOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterOperationProtocol.swift; sourceTree = "<group>"; };
+		04AC04B9272F207D00B8F02A /* ContatcViewController+NotifyTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContatcViewController+NotifyTableViewDelegate.swift"; sourceTree = "<group>"; };
+		04AC04BB272F21D000B8F02A /* ContactCreateViewController+CloseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateViewController+CloseView.swift"; sourceTree = "<group>"; };
+		04AC04BD272F22CA00B8F02A /* ContactPresenterProtocolNotifyTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterProtocolNotifyTableViewDelegate.swift; sourceTree = "<group>"; };
 		04E1B71D272E32AE00A9284D /* PhoneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneType.swift; sourceTree = "<group>"; };
 		04E1B71F272E32C300A9284D /* EmailType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailType.swift; sourceTree = "<group>"; };
 		04E1B722272E335600A9284D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		04E1B724272E337500A9284D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		04E1B727272E340200A9284D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		04E1B729272E38F500A9284D /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
-		04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatcsProtocol.swift; sourceTree = "<group>"; };
+		04E1B72B272E398B00A9284D /* ContactPresenterAvatarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterAvatarProtocol.swift; sourceTree = "<group>"; };
+		1E0C216EB47EAF4A9F49A82D /* Pods-Contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.release.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.release.xcconfig"; sourceTree = "<group>"; };
+		9DDACC7FDE757CB542E0E29E /* Pods_Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE94F57E00B8DA686851B337 /* Pods-Contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.debug.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A02D3922F91276B2525CBB6 /* Pods_Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +91,8 @@
 			children = (
 				04315D9D272D90240040560B /* Contacts */,
 				04315D9C272D90240040560B /* Products */,
+				F0EC2AAA01B8EE1EEB987169 /* Pods */,
+				6F0A2D964E2D25F3244F8F28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				04E1B729272E38F500A9284D /* ContactPresenter.swift */,
-				04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */,
+				04E1B72B272E398B00A9284D /* ContactPresenterAvatarProtocol.swift */,
+				04AC04B5272F1A8B00B8F02A /* ContactPresenterProtocolCloseViewDelegate.swift */,
+				04AC04B7272F1AAC00B8F02A /* ContactPresenterOperationProtocol.swift */,
+				04AC04BD272F22CA00B8F02A /* ContactPresenterProtocolNotifyTableViewDelegate.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -147,6 +173,7 @@
 		04315DB7272DA33B0040560B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04AC04B1272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift */,
 				04E1B726272E33F800A9284D /* Constants */,
 				04315DB6272DA2120040560B /* Extension */,
 			);
@@ -168,6 +195,10 @@
 			isa = PBXGroup;
 			children = (
 				04315DC0272DB8D30040560B /* ContactViewController+Delegate+DataSource.swift */,
+				04A4227D272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift */,
+				04AC04B3272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift */,
+				04AC04B9272F207D00B8F02A /* ContatcViewController+NotifyTableViewDelegate.swift */,
+				04AC04BB272F21D000B8F02A /* ContactCreateViewController+CloseView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +220,23 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		6F0A2D964E2D25F3244F8F28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DDACC7FDE757CB542E0E29E /* Pods_Contacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0EC2AAA01B8EE1EEB987169 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE94F57E00B8DA686851B337 /* Pods-Contacts.debug.xcconfig */,
+				1E0C216EB47EAF4A9F49A82D /* Pods-Contacts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04315DAF272D90250040560B /* Build configuration list for PBXNativeTarget "Contacts" */;
 			buildPhases = (
+				DF3E52A15BD03607194FCDB3 /* [CP] Check Pods Manifest.lock */,
 				04315D97272D90240040560B /* Sources */,
 				04315D98272D90240040560B /* Frameworks */,
 				04315D99272D90240040560B /* Resources */,
+				7CCAB9A7011C4A8B0ACD468D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,27 +305,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CCAB9A7011C4A8B0ACD468D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3E52A15BD03607194FCDB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Contacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04315D97272D90240040560B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04E1B720272E32C300A9284D /* EmailType.swift in Sources */,
+				04AC04BC272F21D000B8F02A /* ContactCreateViewController+CloseView.swift in Sources */,
+				04A4227E272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift in Sources */,
 				04E1B71E272E32AE00A9284D /* PhoneType.swift in Sources */,
 				04E1B728272E340200A9284D /* Constant.swift in Sources */,
 				04315DBD272DAD2A0040560B /* Contact.swift in Sources */,
 				04E1B72A272E38F500A9284D /* ContactPresenter.swift in Sources */,
+				04AC04BA272F207D00B8F02A /* ContatcViewController+NotifyTableViewDelegate.swift in Sources */,
+				04AC04B6272F1A8B00B8F02A /* ContactPresenterProtocolCloseViewDelegate.swift in Sources */,
 				04315DA3272D90240040560B /* ContactViewController.swift in Sources */,
 				04315DC5272DE79C0040560B /* ContactDetailsViewController.swift in Sources */,
+				04AC04B4272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift in Sources */,
 				04315DBB272DACC20040560B /* ContactTableViewCell.swift in Sources */,
-				04E1B72C272E398C00A9284D /* ContatcsProtocol.swift in Sources */,
+				04E1B72C272E398C00A9284D /* ContactPresenterAvatarProtocol.swift in Sources */,
 				04315DC7272DEA320040560B /* Label+Rounded.swift in Sources */,
+				04AC04B8272F1AAC00B8F02A /* ContactPresenterOperationProtocol.swift in Sources */,
 				04315DC1272DB8D30040560B /* ContactViewController+Delegate+DataSource.swift in Sources */,
 				04E1B725272E337500A9284D /* APIServiceProtocol.swift in Sources */,
 				04315D9F272D90240040560B /* AppDelegate.swift in Sources */,
 				04E1B723272E335600A9284D /* APIService.swift in Sources */,
 				04315DC3272DC0060040560B /* ContactCreateViewController.swift in Sources */,
+				04AC04B2272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift in Sources */,
 				04315DB9272DA3740040560B /* ImageView+Rounded.swift in Sources */,
+				04AC04BE272F22CA00B8F02A /* ContactPresenterProtocolNotifyTableViewDelegate.swift in Sources */,
 				04315DA1272D90240040560B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +520,7 @@
 		};
 		04315DB0272D90250040560B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE94F57E00B8DA686851B337 /* Pods-Contacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +549,7 @@
 		};
 		04315DB1272D90250040560B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0C216EB47EAF4A9F49A82D /* Pods-Contacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

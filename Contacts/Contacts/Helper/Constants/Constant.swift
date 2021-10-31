@@ -12,10 +12,15 @@ struct Constants
     
     struct urls {
         
-        static let avatarUrl = "https://avatars.dicebear.com/api/avataaars/"
+        static func avatarUrl(name: String) -> String { return "https://avatars.dicebear.com/api/micah/\(name).svg" }
     }
     struct segues {
         
         static let contactCreateViewController = "contactCreateViewController"
+    }
+    
+    struct tableViewCellIdentifiers {
+        
+        static let contactTableViewCell = "contactTableViewCell"
     }
 }

@@ -13,14 +13,14 @@ extension ContactViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return contactPresenter.contacts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let contactTableViewCell = tableView.dequeueReusableCell(withIdentifier: "contactTableViewCell", for: indexPath) as! ContactTableViewCell
+        let contactTableViewCell = tableView.dequeueReusableCell(withIdentifier: Constants.tableViewCellIdentifiers.contactTableViewCell, for: indexPath) as! ContactTableViewCell
         
-       // contactTableViewCell.setTableViewValues(Contact(name: "Jastin Martinez", logo: UIImage(named: "Picture1")!))
+        contactTableViewCell.setTableViewValues(contactPresenter.contacts[indexPath.row])
         
         return contactTableViewCell
     }

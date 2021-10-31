@@ -10,5 +10,6 @@ import Foundation
 enum PhoneType : String {
     
     case Home
+    case Mobile
     case Work
 }

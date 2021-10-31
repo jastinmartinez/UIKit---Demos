@@ -28,5 +28,7 @@ class ContactTableViewCell: UITableViewCell {
         contactNameLabel.text = contact.firstName
         
         contactLogoImageView.image = contact.picture
+        
+        contactPhoneType.text = contact.phoneType.rawValue
     }
 }

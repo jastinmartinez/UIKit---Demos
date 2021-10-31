@@ -92,14 +92,15 @@
                     <navigationItem key="navigationItem" title="Contacts" id="F0K-V1-9OE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="llz-vg-M6B">
                             <connections>
-                                <action selector="contactCreatePressed:" destination="BYZ-38-t0r" id="1PK-Jh-5Qv"/>
+                                <action selector="contactCreateButtonPressed:" destination="BYZ-38-t0r" id="bWe-lN-3be"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="XMu-bD-mxW" kind="show" identifier="contactCreateViewController" id="sGe-JS-hNA"/>
+                        <outlet property="contactTableView" destination="tck-uM-krE" id="kzS-82-oX0"/>
                         <segue destination="qD7-JY-xih" kind="show" identifier="contactDetailsViewController" id="hOU-zE-Td1"/>
+                        <segue destination="XMu-bD-mxW" kind="show" identifier="contactCreateViewController" id="vMi-AD-Wou"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,11 +118,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-iZ-kXa">
                                 <rect key="frame" x="16" y="103" width="358" height="502"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9DH-Z2-TvG">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X7W-Nw-eGn">
                                         <rect key="frame" x="104" y="1" width="150" height="147.66666666666666"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="i0R-7O-J1f"/>
-                                            <constraint firstAttribute="width" constant="150" id="vhW-6A-A8q"/>
+                                            <constraint firstAttribute="height" constant="150" id="VpO-0e-2VB"/>
+                                            <constraint firstAttribute="width" constant="150" id="mSq-Yb-9af"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="iHd-6V-96p">
@@ -170,6 +171,9 @@
                                             <segment title="Work"/>
                                             <segment title="Home"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="phoneTypeSegmentedControlValueChanged:" destination="XMu-bD-mxW" eventType="valueChanged" id="riG-5U-cfd"/>
+                                        </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="lT9-Eg-0Og">
                                         <rect key="frame" x="10" y="393" width="338" height="34"/>
@@ -190,6 +194,10 @@
                                             <segment title="Home"/>
                                             <segment title="Work"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="emailTypeSegumentedControlValueChanged:" destination="XMu-bD-mxW" eventType="valueChanged" id="Q1X-4X-0iv"/>
+                                            <action selector="phoneTypeSegmentedControlValueChanged:" destination="XMu-bD-mxW" eventType="valueChanged" id="sYI-SY-Xp9"/>
+                                        </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="spr-rh-aSz">
                                         <rect key="frame" x="0.0" y="502" width="358" height="0.0"/>
@@ -241,7 +249,7 @@
                         <outlet property="contactFirstNameTextField" destination="5pK-sl-I3z" id="003-5i-wm2"/>
                         <outlet property="contactPhoneTextField" destination="1GS-Xt-u8l" id="zHe-BP-7AT"/>
                         <outlet property="contactPhoneTypeSegmentedControl" destination="Wt8-3G-6UV" id="J1W-PH-udv"/>
-                        <outlet property="contactPictureImage" destination="9DH-Z2-TvG" id="QbX-5E-3tg"/>
+                        <outlet property="contactPictureImageView" destination="X7W-Nw-eGn" id="821-pG-r6P"/>
                         <outlet property="contactSecondNameTextField" destination="yKB-Vh-ria" id="ESz-4l-aU6"/>
                     </connections>
                 </viewController>
@@ -271,7 +279,7 @@
                                         <rect key="frame" x="200" y="77.333333333333343" width="190" height="45.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jastin Martinez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT2-yi-aNv">
-                                                <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
