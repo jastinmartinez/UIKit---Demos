@@ -9,21 +9,28 @@ import UIKit
 
 class ContactCreateViewController: UIViewController {
 
+    
+    @IBOutlet weak var contactPictureImage: UIImageView!
+    @IBOutlet weak var contactFirstNameTextField: UITextField!
+    @IBOutlet weak var contactSecondNameTextField: UITextField!
+    @IBOutlet weak var contactPhoneTextField: UITextField!
+    @IBOutlet weak var contactPhoneTypeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var contactEmailTextField: UITextField!
+    @IBOutlet weak var contactEmailTypeSegmentedControl: UISegmentedControl!
+    
+    private var contatcPresenter = ContactsPresenter()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func contactCreateSavedButtonPressed(_ sender: Any) {
+        
+        //contatcPresenter.addContact()
     }
-    */
-
+    
+    @IBAction func contactDeleteButtonPressed(_ sender: Any) {
+        
+    }
 }

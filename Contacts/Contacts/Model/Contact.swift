@@ -11,7 +11,18 @@ import UIKit
 
 struct Contact {
     
-    let name: String
+    let id: UUID
     
-    let logo: UIImage
+    let firstName: String
+    
+    let secondeName: String
+    
+    let picture: UIImage
+    
+    let email: String
+    
+    let phoneType: PhoneType
+    
+    let emailType: EmailType
+    
 }

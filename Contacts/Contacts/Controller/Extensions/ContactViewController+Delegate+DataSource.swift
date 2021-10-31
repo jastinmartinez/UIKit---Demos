@@ -20,7 +20,7 @@ extension ContactViewController: UITableViewDelegate,UITableViewDataSource {
         
         let contactTableViewCell = tableView.dequeueReusableCell(withIdentifier: "contactTableViewCell", for: indexPath) as! ContactTableViewCell
         
-        contactTableViewCell.setTableViewValues(Contact(name: "Jastin Martinez", logo: UIImage(named: "Picture1")!))
+       // contactTableViewCell.setTableViewValues(Contact(name: "Jastin Martinez", logo: UIImage(named: "Picture1")!))
         
         return contactTableViewCell
     }

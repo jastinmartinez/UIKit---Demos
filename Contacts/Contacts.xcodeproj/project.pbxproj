@@ -20,6 +20,13 @@
 		04315DC3272DC0060040560B /* ContactCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC2272DC0060040560B /* ContactCreateViewController.swift */; };
 		04315DC5272DE79C0040560B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC4272DE79C0040560B /* ContactDetailsViewController.swift */; };
 		04315DC7272DEA320040560B /* Label+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04315DC6272DEA320040560B /* Label+Rounded.swift */; };
+		04E1B71E272E32AE00A9284D /* PhoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B71D272E32AE00A9284D /* PhoneType.swift */; };
+		04E1B720272E32C300A9284D /* EmailType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B71F272E32C300A9284D /* EmailType.swift */; };
+		04E1B723272E335600A9284D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B722272E335600A9284D /* APIService.swift */; };
+		04E1B725272E337500A9284D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B724272E337500A9284D /* APIServiceProtocol.swift */; };
+		04E1B728272E340200A9284D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B727272E340200A9284D /* Constant.swift */; };
+		04E1B72A272E38F500A9284D /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B729272E38F500A9284D /* ContactPresenter.swift */; };
+		04E1B72C272E398C00A9284D /* ContatcsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		04315DC2272DC0060040560B /* ContactCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCreateViewController.swift; sourceTree = "<group>"; };
 		04315DC4272DE79C0040560B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		04315DC6272DEA320040560B /* Label+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Rounded.swift"; sourceTree = "<group>"; };
+		04E1B71D272E32AE00A9284D /* PhoneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneType.swift; sourceTree = "<group>"; };
+		04E1B71F272E32C300A9284D /* EmailType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailType.swift; sourceTree = "<group>"; };
+		04E1B722272E335600A9284D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		04E1B724272E337500A9284D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		04E1B727272E340200A9284D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		04E1B729272E38F500A9284D /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatcsProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 		04315D9D272D90240040560B /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				04E1B721272E333700A9284D /* APIService */,
 				04315DBE272DB87B0040560B /* Controller */,
 				04315DB7272DA33B0040560B /* Helper */,
 				04315DB5272D99640040560B /* Views */,
@@ -97,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				04315DBC272DAD2A0040560B /* Contact.swift */,
+				04E1B71D272E32AE00A9284D /* PhoneType.swift */,
+				04E1B71F272E32C300A9284D /* EmailType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +121,8 @@
 		04315DB4272D99590040560B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				04E1B729272E38F500A9284D /* ContactPresenter.swift */,
+				04E1B72B272E398B00A9284D /* ContatcsProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 		04315DB7272DA33B0040560B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04E1B726272E33F800A9284D /* Constants */,
 				04315DB6272DA2120040560B /* Extension */,
 			);
 			path = Helper;
@@ -150,6 +170,23 @@
 				04315DC0272DB8D30040560B /* ContactViewController+Delegate+DataSource.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04E1B721272E333700A9284D /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				04E1B722272E335600A9284D /* APIService.swift */,
+				04E1B724272E337500A9284D /* APIServiceProtocol.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		04E1B726272E33F800A9284D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04E1B727272E340200A9284D /* Constant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,13 +260,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E1B720272E32C300A9284D /* EmailType.swift in Sources */,
+				04E1B71E272E32AE00A9284D /* PhoneType.swift in Sources */,
+				04E1B728272E340200A9284D /* Constant.swift in Sources */,
 				04315DBD272DAD2A0040560B /* Contact.swift in Sources */,
+				04E1B72A272E38F500A9284D /* ContactPresenter.swift in Sources */,
 				04315DA3272D90240040560B /* ContactViewController.swift in Sources */,
 				04315DC5272DE79C0040560B /* ContactDetailsViewController.swift in Sources */,
 				04315DBB272DACC20040560B /* ContactTableViewCell.swift in Sources */,
+				04E1B72C272E398C00A9284D /* ContatcsProtocol.swift in Sources */,
 				04315DC7272DEA320040560B /* Label+Rounded.swift in Sources */,
 				04315DC1272DB8D30040560B /* ContactViewController+Delegate+DataSource.swift in Sources */,
+				04E1B725272E337500A9284D /* APIServiceProtocol.swift in Sources */,
 				04315D9F272D90240040560B /* AppDelegate.swift in Sources */,
+				04E1B723272E335600A9284D /* APIService.swift in Sources */,
 				04315DC3272DC0060040560B /* ContactCreateViewController.swift in Sources */,
 				04315DB9272DA3740040560B /* ImageView+Rounded.swift in Sources */,
 				04315DA1272D90240040560B /* SceneDelegate.swift in Sources */,

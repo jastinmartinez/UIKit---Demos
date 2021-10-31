@@ -90,11 +90,15 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contacts" id="F0K-V1-9OE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="llz-vg-M6B"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="llz-vg-M6B">
+                            <connections>
+                                <action selector="contactCreatePressed:" destination="BYZ-38-t0r" id="1PK-Jh-5Qv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="XMu-bD-mxW" kind="show" identifier="contactAddViewController" id="sGe-JS-hNA"/>
+                        <segue destination="XMu-bD-mxW" kind="show" identifier="contactCreateViewController" id="sGe-JS-hNA"/>
                         <segue destination="qD7-JY-xih" kind="show" identifier="contactDetailsViewController" id="hOU-zE-Td1"/>
                     </connections>
                 </viewController>
@@ -111,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="pZW-iZ-kXa">
-                                <rect key="frame" x="16" y="103" width="358" height="533"/>
+                                <rect key="frame" x="16" y="103" width="358" height="502"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9DH-Z2-TvG">
                                         <rect key="frame" x="104" y="1" width="150" height="147.66666666666666"/>
@@ -129,7 +133,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-sl-I3z">
                                                 <rect key="frame" x="40.666666666666657" y="0.0" width="297.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" textContentType="name"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -142,7 +146,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-Vh-ria">
                                                 <rect key="frame" x="40.666666666666657" y="0.0" width="297.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" textContentType="family-name"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -155,7 +159,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-Xt-u8l">
                                                 <rect key="frame" x="42.333333333333343" y="0.0" width="295.66666666666663" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -176,7 +180,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaI-cF-8MH">
                                                 <rect key="frame" x="45.666666666666657" y="0.0" width="292.33333333333337" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -188,13 +192,16 @@
                                         </segments>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="spr-rh-aSz">
-                                        <rect key="frame" x="0.0" y="502" width="358" height="31"/>
+                                        <rect key="frame" x="0.0" y="502" width="358" height="0.0"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtW-8q-XCl">
-                                                <rect key="frame" x="292" y="0.0" width="66" height="31"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtW-8q-XCl">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="0.0"/>
                                                 <color key="tintColor" red="1" green="0.18039215689999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                                <connections>
+                                                    <action selector="contactDeleteButtonPressed:" destination="XMu-bD-mxW" eventType="touchUpInside" id="wFe-B9-fzN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -222,8 +229,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euf-hs-3jt">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="9HI-dT-imy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="9HI-dT-imy">
+                            <connections>
+                                <action selector="contactCreateSavedButtonPressed:" destination="XMu-bD-mxW" id="4W4-QD-6TQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contactEmailTextField" destination="jaI-cF-8MH" id="MbB-MN-dgj"/>
+                        <outlet property="contactEmailTypeSegmentedControl" destination="hMk-bi-Bl5" id="R3o-Bk-jsU"/>
+                        <outlet property="contactFirstNameTextField" destination="5pK-sl-I3z" id="003-5i-wm2"/>
+                        <outlet property="contactPhoneTextField" destination="1GS-Xt-u8l" id="zHe-BP-7AT"/>
+                        <outlet property="contactPhoneTypeSegmentedControl" destination="Wt8-3G-6UV" id="J1W-PH-udv"/>
+                        <outlet property="contactPictureImage" destination="9DH-Z2-TvG" id="QbX-5E-3tg"/>
+                        <outlet property="contactSecondNameTextField" destination="yKB-Vh-ria" id="ESz-4l-aU6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4i-80-jb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,18 +257,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ukm-f7-dJE">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ukm-f7-dJE">
                                 <rect key="frame" x="0.0" y="88" width="390" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1" translatesAutoresizingMaskIntoConstraints="NO" id="9sg-SB-OGb">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="I2J-aQ-PT1"/>
                                             <constraint firstAttribute="height" constant="200" id="pwM-9f-gxU"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="weF-9A-52y">
-                                        <rect key="frame" x="195" y="77.333333333333343" width="195" height="45.666666666666657"/>
+                                        <rect key="frame" x="200" y="77.333333333333343" width="190" height="45.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jastin Martinez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT2-yi-aNv">
                                                 <rect key="frame" x="0.0" y="0.0" width="116.33333333333333" height="20.333333333333332"/>

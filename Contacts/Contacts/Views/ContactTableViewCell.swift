@@ -25,8 +25,8 @@ class ContactTableViewCell: UITableViewCell {
     
     func setTableViewValues(_ contact: Contact) {
         
-        contactNameLabel.text = contact.name
+        contactNameLabel.text = contact.firstName
         
-        contactLogoImageView.image = contact.logo
+        contactLogoImageView.image = contact.picture
     }
 }

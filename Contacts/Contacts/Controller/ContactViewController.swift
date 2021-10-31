@@ -13,5 +13,11 @@ class ContactViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func contactCreateButtonPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: Constants.segues.contactCreateViewController, sender: nil)
+        
+    }
 }
 
