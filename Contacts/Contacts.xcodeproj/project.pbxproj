@@ -25,6 +25,7 @@
 		0456E2F7272FF6FC00E71E4B /* ContactCreateOrEditViewController+LoadDataForFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E2F6272FF6FC00E71E4B /* ContactCreateOrEditViewController+LoadDataForFields.swift */; };
 		0456E2F9272FFFAF00E71E4B /* ContactPresenterProtocolNotifyContactDetailViewWhenEditDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E2F8272FFFAF00E71E4B /* ContactPresenterProtocolNotifyContactDetailViewWhenEditDelegate.swift */; };
 		0456E2FB2730003800E71E4B /* ContactDetailView+NotifyWhenEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E2FA2730003800E71E4B /* ContactDetailView+NotifyWhenEdit.swift */; };
+		0456E2FD273007B200E71E4B /* TextField+PhoneNumberFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456E2FC273007B200E71E4B /* TextField+PhoneNumberFormat.swift */; };
 		04A4227E272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4227D272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift */; };
 		04AC04B2272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B1272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift */; };
 		04AC04B4272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC04B3272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift */; };
@@ -66,6 +67,7 @@
 		0456E2F6272FF6FC00E71E4B /* ContactCreateOrEditViewController+LoadDataForFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateOrEditViewController+LoadDataForFields.swift"; sourceTree = "<group>"; };
 		0456E2F8272FFFAF00E71E4B /* ContactPresenterProtocolNotifyContactDetailViewWhenEditDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenterProtocolNotifyContactDetailViewWhenEditDelegate.swift; sourceTree = "<group>"; };
 		0456E2FA2730003800E71E4B /* ContactDetailView+NotifyWhenEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailView+NotifyWhenEdit.swift"; sourceTree = "<group>"; };
+		0456E2FC273007B200E71E4B /* TextField+PhoneNumberFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+PhoneNumberFormat.swift"; sourceTree = "<group>"; };
 		04A4227D272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateViewController+TextFieldsTargets.swift"; sourceTree = "<group>"; };
 		04AC04B1272F0A0A00B8F02A /* RequiredFieldsAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldsAlertViewController.swift; sourceTree = "<group>"; };
 		04AC04B3272F110C00B8F02A /* ContactCreateViewController+RequiredFieldsAndValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactCreateViewController+RequiredFieldsAndValidations.swift"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				04315DB8272DA3740040560B /* ImageView+Rounded.swift */,
 				04315DC6272DEA320040560B /* Label+Rounded.swift */,
 				04AC04C5272F4A2100B8F02A /* Label+GeneratebackgroundRandomColor.swift */,
+				0456E2FC273007B200E71E4B /* TextField+PhoneNumberFormat.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				04AC04BC272F21D000B8F02A /* ContactCreateViewController+CloseView.swift in Sources */,
 				04A4227E272EE64B00DD197B /* ContactCreateViewController+TextFieldsTargets.swift in Sources */,
 				04E1B71E272E32AE00A9284D /* PhoneType.swift in Sources */,
+				0456E2FD273007B200E71E4B /* TextField+PhoneNumberFormat.swift in Sources */,
 				04E1B728272E340200A9284D /* Constant.swift in Sources */,
 				04315DBD272DAD2A0040560B /* Contact.swift in Sources */,
 				04E1B72A272E38F500A9284D /* ContactPresenter.swift in Sources */,

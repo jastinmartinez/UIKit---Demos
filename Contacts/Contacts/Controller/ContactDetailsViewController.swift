@@ -33,6 +33,7 @@ class ContactDetailsViewController: UIViewController {
         
         self.contactFirstNameLabel.text = contactPresenter?.contact?.firstName
         self.contactPhoneNumberLabel.text = contactPresenter?.contact?.phoneNumber
+        self.contactPhoneNumberLabel.phoneNumberFormat()
         self.contactLastNameLabel.text = contactPresenter?.contact?.lastName
         self.contactPictureImageView.image = contactPresenter?.contact?.picture
         self.contactPhoneTypeLabel.text = contactPresenter?.contact?.phoneType.type.rawValue

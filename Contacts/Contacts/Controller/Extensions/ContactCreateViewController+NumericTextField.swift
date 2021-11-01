@@ -12,6 +12,6 @@ extension ContactCreateOrEditViewController : UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        return CharacterSet(charactersIn: "1234567890-").isSuperset(of: CharacterSet(charactersIn: string)) && range.location <= 14
+        return CharacterSet(charactersIn: "1234567890").isSuperset(of: CharacterSet(charactersIn: string)) && range.location <= 9
     }
 }

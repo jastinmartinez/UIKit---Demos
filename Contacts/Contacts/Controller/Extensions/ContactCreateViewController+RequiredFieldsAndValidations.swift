@@ -23,6 +23,10 @@ extension ContactCreateOrEditViewController {
             showMessageForRequiredField(alert: RequiredFieldsAlerViewController(message: "Phone Number").alert)
             return
         }
+         
+         guard phoneNumber.count > 9 else { showMessageForRequiredField(alert: RequiredFieldsAlerViewController(message: "Phone Number is not complete missing \(10 - phoneNumber.count) to complete").alert)
+             return
+         }
         
         
         completion((firstName,phoneNumber))
