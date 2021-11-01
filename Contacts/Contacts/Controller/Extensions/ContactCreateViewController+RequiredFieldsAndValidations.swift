@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension ContactCreateViewController {
+extension ContactCreateOrEditViewController {
     
      func requiredFields(completion: ((firstName:String, phoneNumber:String)) -> ()) {
         

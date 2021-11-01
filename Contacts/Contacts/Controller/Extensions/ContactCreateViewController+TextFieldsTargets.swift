@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-extension ContactCreateViewController {
+extension ContactCreateOrEditViewController {
     
     
     @objc private func contactFirstNameTextFieldeditingDidEnd(_ textField: UITextField) {
         
         if let fistName = textField.text,!fistName.isEmpty {
             
-            self.contactPresenter?.generateAvatar(name: fistName) { avatar in
+            self.contactPresenter.instance.generateAvatar(name: fistName) { avatar in
                 
                 DispatchQueue.main.async {
                     

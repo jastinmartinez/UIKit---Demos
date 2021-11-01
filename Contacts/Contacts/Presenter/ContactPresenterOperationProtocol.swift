@@ -13,6 +13,6 @@ protocol ContactPresenterOperationProtocol {
     
     func editContact(_ contact: Contact)
     
-    func removeContact(_ contactID: String)
+    func removeContact()
     
 }

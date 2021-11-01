@@ -16,7 +16,6 @@ class ContactViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         contactPresenter.contactNotifyTableViewDelegate = self
     }
     
@@ -25,16 +24,5 @@ class ContactViewController: UIViewController {
         performSegue(withIdentifier: Constants.segues.contactCreateViewController, sender: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == Constants.segues.contactCreateViewController {
-            
-            guard let contactCreateViewController = segue.destination as? ContactCreateViewController else { return }
-            
-            contactCreateViewController.contactPresenter = contactPresenter
-            
-            contactCreateViewController.contactPresenter?.contactNotifyTableViewDelegate = self
-        }
-    }
 }
 

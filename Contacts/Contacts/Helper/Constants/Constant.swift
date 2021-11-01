@@ -17,6 +17,11 @@ struct Constants
     struct segues {
         
         static let contactCreateViewController = "contactCreateViewController"
+        
+        static let contactDetailsViewController = "contactDetailsViewController"
+        
+        static let contactEditViewController = "contactEditViewController"
+
     }
     
     struct tableViewCellIdentifiers {

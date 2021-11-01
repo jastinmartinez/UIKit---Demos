@@ -7,10 +7,16 @@
 
 import Foundation
 
-extension ContactCreateViewController: ContactPresenterProtocolCloseViewDelegate {
+extension ContactCreateOrEditViewController: ContactPresenterProtocolCloseViewAfterOperationDelegate {
     
-    func CloseViewAfterOperationComplete() {
-    
-        self.navigationController?.popViewController(animated: true)
+    func isDoneWithAnyOperation(actionView: ActionInView) {
+        
+        if actionView == .create || actionView == .edit {
+            
+            self.navigationController?.popViewController(animated: true)
+        }
+        else {
+            navigationController?.popToRootViewController(animated: true)
+        }
     }
 }

@@ -9,5 +9,5 @@ import Foundation
 
 protocol ContactPresenterProtocolNotifyTableViewDelegate {
     
-    func NotifyTableViewAfterOperationComplete()
+    func isDoneWithAnyCrudOperation()
 }

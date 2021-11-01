@@ -10,7 +10,7 @@ import Foundation
 
 extension ContactViewController: ContactPresenterProtocolNotifyTableViewDelegate {
     
-    func NotifyTableViewAfterOperationComplete() {
+    func isDoneWithAnyCrudOperation() {
         
         DispatchQueue.main.async {
             

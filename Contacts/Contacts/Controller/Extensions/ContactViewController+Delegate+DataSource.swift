@@ -25,4 +25,11 @@ extension ContactViewController: UITableViewDelegate,UITableViewDataSource {
         return contactTableViewCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        contactPresenter.contact = contactPresenter.contacts[indexPath.row]
+        
+        performSegue(withIdentifier: Constants.segues.contactDetailsViewController, sender: nil)
+       
+    }
 }

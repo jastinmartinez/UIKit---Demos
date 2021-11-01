@@ -15,14 +15,16 @@ struct Contact {
     
     let firstName: String
     
-    let secondeName: String?
+    let lastName: String?
+    
+    let phoneNumber: String
     
     let picture: UIImage
     
     let email: String?
     
-    let phoneType: PhoneType
+    let phoneType: (type:PhoneType,index:Int)
     
-    let emailType: EmailType
+    let emailType: (type:EmailType,index:Int)
     
 }

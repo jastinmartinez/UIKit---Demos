@@ -29,6 +29,8 @@ class ContactTableViewCell: UITableViewCell {
         
         contactLogoImageView.image = contact.picture
         
-        contactPhoneType.text = contact.phoneType.rawValue
+        contactPhoneType.text = contact.phoneType.type.rawValue
+        
+        contactPhoneType.generateRandomBackgroundColor()
     }
 }

@@ -15,34 +15,45 @@ class ContactsPresenter : ContactPresenterAvatarProtocol,ContactPresenterOperati
         
         didSet {
             
-            self.contactCloseViewDelegate?.CloseViewAfterOperationComplete()
-            
-            self.contactNotifyTableViewDelegate?.NotifyTableViewAfterOperationComplete()
+            self.contactNotifyTableViewDelegate?.isDoneWithAnyCrudOperation()
         }
     }
     
-    var contactCloseViewDelegate: ContactPresenterProtocolCloseViewDelegate?
+    var contact:Contact?
+    
+    var contactCloseViewDelegate: ContactPresenterProtocolCloseViewAfterOperationDelegate?
     
     var contactNotifyTableViewDelegate: ContactPresenterProtocolNotifyTableViewDelegate?
+    
+    var contactPresenterProtocolNotifyDetailView: ContactPresenterProtocolNotifyContactDetailViewWhenEditDelegate?
     
     func addContact(_ contact: Contact) {
         
         contacts.append(contact)
+        self.contactCloseViewDelegate?.isDoneWithAnyOperation(actionView: .create)
     }
     
-    func editContact(_ contact: Contact) {
+    func editContact(_ outcontact: Contact) {
         
-        if let customerIndex = contacts.firstIndex(where: {$0.id == contact.id}) {
+        if let customerIndex = contacts.firstIndex(where: {$0.id == outcontact.id}) {
             
-            contacts[customerIndex] = contact
+            contact = outcontact
+            
+            contacts[customerIndex] = outcontact
+            
+            self.contactPresenterProtocolNotifyDetailView?.isDoneOperationEdit()
+            
+            self.contactCloseViewDelegate?.isDoneWithAnyOperation(actionView: .edit)
         }
     }
     
-    func removeContact(_ contactID: String) {
+    func removeContact() {
         
-        if let customerIndex = contacts.firstIndex(where: {$0.id == contactID}) {
+        if let customerIndex = contacts.firstIndex(where: {$0.id == contact?.id}) {
             
             contacts.remove(at: customerIndex)
+            
+            self.contactCloseViewDelegate?.isDoneWithAnyOperation(actionView: .delete)
         }
     }
     
