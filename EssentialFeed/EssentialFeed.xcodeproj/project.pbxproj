@@ -12,6 +12,7 @@
 		3CA0B5DF292A975F002FF78D /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5DE292A975F002FF78D /* EssentialFeedTests.swift */; };
 		3CA0B5E0292A975F002FF78D /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA0B5D2292A975F002FF78D /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA0B5EA292A9774002FF78D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5E9292A9774002FF78D /* FeedItem.swift */; };
+		3CA0B5EC292A98C0002FF78D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5EB292A98C0002FF78D /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		3CA0B5D9292A975F002FF78D /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA0B5DE292A975F002FF78D /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		3CA0B5E9292A9774002FF78D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		3CA0B5EB292A98C0002FF78D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				3CA0B5D2292A975F002FF78D /* EssentialFeed.h */,
 				3CA0B5D3292A975F002FF78D /* EssentialFeed.docc */,
 				3CA0B5E9292A9774002FF78D /* FeedItem.swift */,
+				3CA0B5EB292A98C0002FF78D /* FeedLoader.swift */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA0B5EC292A98C0002FF78D /* FeedLoader.swift in Sources */,
 				3CA0B5EA292A9774002FF78D /* FeedItem.swift in Sources */,
 				3CA0B5D4292A975F002FF78D /* EssentialFeed.docc in Sources */,
 			);
