@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		3CA0B5D4292A975F002FF78D /* EssentialFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5D3292A975F002FF78D /* EssentialFeed.docc */; };
 		3CA0B5DA292A975F002FF78D /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA0B5CF292A975F002FF78D /* EssentialFeed.framework */; };
-		3CA0B5DF292A975F002FF78D /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5DE292A975F002FF78D /* EssentialFeedTests.swift */; };
 		3CA0B5E0292A975F002FF78D /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA0B5D2292A975F002FF78D /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CA0B5EA292A9774002FF78D /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5E9292A9774002FF78D /* FeedItem.swift */; };
 		3CA0B5EC292A98C0002FF78D /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5EB292A98C0002FF78D /* FeedLoader.swift */; };
+		3CA0B5EF292A9C28002FF78D /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0B5EE292A9C28002FF78D /* RemoteFeedLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +30,9 @@
 		3CA0B5D2292A975F002FF78D /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		3CA0B5D3292A975F002FF78D /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
 		3CA0B5D9292A975F002FF78D /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CA0B5DE292A975F002FF78D /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		3CA0B5E9292A9774002FF78D /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3CA0B5EB292A98C0002FF78D /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		3CA0B5EE292A9C28002FF78D /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 		3CA0B5DD292A975F002FF78D /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				3CA0B5DE292A975F002FF78D /* EssentialFeedTests.swift */,
+				3CA0B5EE292A9C28002FF78D /* RemoteFeedLoaderTests.swift */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -164,6 +164,7 @@
 					};
 					3CA0B5D8292A975F002FF78D = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -218,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA0B5DF292A975F002FF78D /* EssentialFeedTests.swift in Sources */,
+				3CA0B5EF292A9C28002FF78D /* RemoteFeedLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,13 +412,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQNY636DWS;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasitinmartinez.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,9 +436,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WQNY636DWS;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasitinmartinez.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
